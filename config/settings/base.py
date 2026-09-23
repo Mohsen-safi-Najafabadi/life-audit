@@ -44,7 +44,10 @@ THIRD_PARTY_APPS = []
 
 # Our own apps are added here as we build them.
 LOCAL_APPS = [
+    "apps.core",
     "apps.accounts",
+    "apps.workspaces",
+    "apps.tracking",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
