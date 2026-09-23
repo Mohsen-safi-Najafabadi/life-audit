@@ -1,0 +1,12 @@
+# Core framework
+Django==5.1.6
+
+# Configuration
+django-environ==0.11.2
+
+# Password hashing
+argon2-cffi==23.1.0
+
+# Development & testing
+pytest==8.3.4
+pytest-django==4.9.0
