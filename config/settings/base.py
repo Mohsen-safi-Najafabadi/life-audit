@@ -43,7 +43,9 @@ DJANGO_APPS = [
 THIRD_PARTY_APPS = []
 
 # Our own apps are added here as we build them.
-LOCAL_APPS = []
+LOCAL_APPS = [
+    "apps.accounts",
+]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
@@ -133,3 +135,6 @@ STATICFILES_DIRS = [BASE_DIR / "static"]
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# Our custom user model. Set before the first migration.
+AUTH_USER_MODEL = "accounts.User"
